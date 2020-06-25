@@ -23,7 +23,7 @@ def run_task():
 
     model.summary()
 
-    model.fit(x_train, y_train.squeeze().argmax(axis=1), epochs=100,
+    model.fit(x_train, y_train.squeeze().argmax(axis=1), epochs=2,
               validation_data=(x_test, y_test.squeeze().argmax(axis=1)))
 
 
